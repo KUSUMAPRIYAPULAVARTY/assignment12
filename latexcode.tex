@@ -152,25 +152,24 @@ Let $\vec{V}$ be the set of real numbers.Regard  $\vec{V}$  as a vector space ov
 
 \section{Solution}
 Given $\vec{V}$ is a vector space over field $\mathbbf{Q}$ (rational numbers)\\
-It is finite dimensional if every vector $\vec{v}$ in $\vec{V}$ can be written as
+It is finite dimensional with dimensionality $n$ if every vector $\vec{v}$ in $\vec{V}$ can be written as
 \begin{align}
     \vec{v}=\sum_{i=1}^{n} c_i\alpha_i\\
     \text{where }c_i \in \mathbbf{Q}\\
     \text{and } \vec{B}= \cbrak{\alpha_1,\alpha_2,\hdots,\alpha_n }
 \end{align}
 is the basis with linearly independent $\alpha_i$\\
-To denote the vectors $\cbrak{\mathbbf{e},\mathbbf{e}^2,\mathbbf{e}^3,\hdots}$ lying in the vector space $\vec{V}$,the basis vectors have to contain $\mathbbf{e}$\\ raised to some value.\\
-Let $\mathbbf{e}$ is one of the basis vectors and no other higher powers of $\mathbbf{e}$ are in the basis\\
+To denote the subspace of vectors
 \begin{align}
-    \mathbbf{e}^{2}=\mathbbf{e}.\mathbbf{e}\\
-    \text{So,for rational $c_i$,  }\mathbbf{e}^{2} \neq \sum c_i\alpha_i
+    \vec{V'}=\cbrak{e,e^2,e^3,\hdots}
 \end{align}
-Since $\mathbbf{e}^{2}$ does not lie in span of $\vec{B}$
+lying in the vector space $\vec{V}$,we consider the infinite series
 \begin{align}
-    \vec{B'}=\vec{B} \cup \cbrak{\mathbbf{e}^{2}}
+    e^k=\sum_{n=0}^\infty \frac{k^n}{n!}\\
+    =1+\frac{k}{1!}+\frac{k^2}{2!}+\frac{k^3}{3!}+\hdots\\
 \end{align}
-also has linearly independent vectors and can be the basis of $\vec{V}$.
-But $\vec{B'}$ also cannot span the whole $\vec{V}$ since it cannot generate $\mathbbf{e}^{3}$ by any combinations of $\vec{B'}$ and this continues for any $\mathbbf{e}^n$ present in the basis. \\
-From this we can conclude that the vector space $\vec{V}$ of real numbers is not finite dimensional over the field of rational numbers $\mathbbf{Q}$
+where the scalars $\cbrak{\frac{1}{0!},\frac{1}{1!},\frac{1}{2!},\hdots} \in \mathbbf{Q}$\\and the basis is $\cbrak{1,k,k^2,\hdots}$\\
+Since this is an infinite series,we have the dimensionality of $\vec{V'}$ and hence of $\vec{V}$ as $\infty$\\
+So, the vector space $\vec{V}$ of real numbers is not finite dimensional over the field of rational numbers $\mathbbf{Q}$
 \end{document}
 
