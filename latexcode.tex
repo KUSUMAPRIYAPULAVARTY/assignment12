@@ -154,22 +154,25 @@ Let $\vec{V}$ be the set of real numbers.Regard  $\vec{V}$  as a vector space ov
 Given $\vec{V}$ is a vector space over field $\mathbbf{Q}$ (rational numbers)\\
 It is finite dimensional with dimensionality $n$ if every vector $\vec{v}$ in $\vec{V}$ can be written as
 \begin{align}
-    \vec{v}=\sum_{i=1}^{n} c_i\alpha_i\\
+    \vec{v}=\sum_{i=0}^{n-1} c_i\alpha_i\\
     \text{where }c_i \in \mathbbf{Q}\\
-    \text{and } \vec{B}= \cbrak{\alpha_1,\alpha_2,\hdots,\alpha_n }
+    \text{and } \vec{B}= \cbrak{\alpha_0,\alpha_1,\hdots,\alpha_{n-1} }
 \end{align}
 is the basis with linearly independent $\alpha_i$\\
-To denote the subspace of vectors
+We know that $e^k$ is a vector that lies in $\vec{V}$
 \begin{align}
-    \vec{V'}=\cbrak{e,e^2,e^3,\hdots}
+e^k=\sum_{i=0}^\infty \frac{k^i}{i!}\label{1}\\
+=1+\frac{k}{1!}+\frac{k^2}{2!}+\frac{k^3}{3!}+\hdots
 \end{align}
-lying in the vector space $\vec{V}$,we consider the infinite series
+Representing $e^k$ as a linear combination of basis vectors
 \begin{align}
-    e^k=\sum_{n=0}^\infty \frac{k^n}{n!}\\
-    =1+\frac{k}{1!}+\frac{k^2}{2!}+\frac{k^3}{3!}+\hdots\\
+    e^k=\sum_{i=0}^{n-1} c_i\alpha_i\label{2}\\
+    \text{where } c_i=\begin{cases}
+      \frac{1}{i!}   & \text{if  } \alpha_i=k^i \\
+      0 & \text{otherwise}
+    \end{cases}
 \end{align}
-where the scalars $\cbrak{\frac{1}{0!},\frac{1}{1!},\frac{1}{2!},\hdots} \in \mathbbf{Q}$\\and the basis is $\cbrak{1,k,k^2,\hdots}$\\
-Since this is an infinite series,we have the dimensionality of $\vec{V'}$ and hence of $\vec{V}$ as $\infty$\\
+Since, \eqref{1} refers to an infinite summation, the representation in \eqref{2} is achieved only if $n$ is $\infty$
 So, the vector space $\vec{V}$ of real numbers is not finite dimensional over the field of rational numbers $\mathbbf{Q}$
 \end{document}
 
