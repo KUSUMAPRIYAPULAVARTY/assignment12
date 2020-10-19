@@ -159,26 +159,46 @@ It is finite dimensional with dimensionality $n$ if every vector $\vec{v}$ in $\
     \text{and } \vec{B}= \cbrak{\alpha_0,\alpha_1,\hdots,\alpha_{n-1} }
 \end{align}
 is the basis with linearly independent $\alpha_i$\\
-We know that $e^k$ is a vector that lies in $\vec{V}$
+Let us consider the set of polynomials in $k$ of degree less than equal to n
 \begin{align}
-e^k=\sum_{i=0}^\infty \frac{k^i}{i!}\label{1}\\
-=1+\frac{k}{1!}+\frac{k^2}{2!}+\frac{k^3}{3!}+\hdots
+    f(k)=a_0+a_1k+a_2k^2+\hdots+a_{n-1}k^{n-1}
 \end{align}
-Representing $e^k$ as a linear combination of basis vectors
+Checking if it a subspace of $\vec{V}$\\
+Any function of the form $f(ck_1+k_2)$ (where $c \in \mathbbf{Q}$) becomes
 \begin{align}
-    e^k=\sum_{i=0}^{n-1} c_i\alpha_i\label{2}\\
-    \text{where } c_i=\begin{cases}
-      \frac{1}{i!}   & \text{if  } \alpha_i=k^i \\
-      0 & \text{otherwise}
-    \end{cases}
+   f(ck_1+k_2)=a_0+a_1(ck_1+k_2)+\\a_2(ck_1+k_2)^2+\hdots+a_{n-1}(ck_1+k_2)^{n-1} 
 \end{align}
-Clearly the set of vectors \cbrak{1,k,k^2,k^3,\hdots\infty} forms a linearly independent set since\\
+which is also a polynomial of degree less than equal to $n$ implying it is closed under scalar multiplication and vector addition.\\
+Hence it forms a subspace with basis 
+\begin{align}
+    \vec{B}=\cbrak{1,k,k^2,\hdots,k^{n-1}}
+\end{align}
+Clearly the set of vectors \cbrak{1,k,k^2,k^3,\hdots\,k^{n-1}} forms a linearly independent set since\\
 for $\beta_0,\beta_1,\beta_2,\hdots \in \mathbbf{Q}$
 \begin{align}
-    \beta_0(1)+ \beta_1(k)+ \beta_2(k^2)+\hdots=0 \\ \iff \beta_0,\beta_1,\beta_2,\hdots=0
+    \beta_0(1)+ \beta_1(k)+ \beta_2(k^2)+\hdots=0 \\
+    \implies \beta_0=0, k( \beta_1+ \beta_2(k)+\hdots)=0\\
+    \implies \beta_1=0, k(\beta_2+\beta_3(k)+\hdots)=0\\
+    \text{Therefore }\beta_0(1)+ \beta_1(k)+ \beta_2(k^2)+\hdots=0\\ \iff 
+    \beta_0,\beta_1,\beta_2,\hdots=0
 \end{align}
-
-Since, \eqref{1} refers to an infinite summation, the representation in \eqref{2} is achieved only if $n$ is $\infty$
+and they also span the subspace as
+\begin{align}
+    f(k)=\sum_{i=0}^{n-1}a_ik^i
+\end{align}
+So, $\vec{B}$ forms a basis for the subspace 
+\\We know that $e^k$ is a vector that lies in $\vec{V}$
+\begin{align}
+e^k=\sum_{i=0}^\infty \frac{k^i}{i!}\\
+=1+\frac{k}{1!}+\frac{k^2}{2!}+\frac{k^3}{3!}+\hdots
+\end{align}
+Representing $e^k$ as a polynomial function,
+\begin{align}
+    f(k)=e^k=\sum_{i=0}^{\infty} c_ik^i\label{1}\\
+    \text{where } c_i=\frac{1}{i!} \in \mathbbf{Q}  
+\end{align}
+Since, \eqref{1} refers to an infinite summation,  $n$ is $\infty$\\
+So, a of subspace $\vec{V}$ is not finite dimensional over $\mathbbf{Q}$
 So, the vector space $\vec{V}$ of real numbers is not finite dimensional over the field of rational numbers $\mathbbf{Q}$
 \end{document}
 
