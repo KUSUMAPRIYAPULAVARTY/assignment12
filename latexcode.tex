@@ -159,11 +159,22 @@ It is finite dimensional with dimensionality $n$ if every vector $\vec{v}$ in $\
     \text{and } \vec{B}= \cbrak{\alpha_0,\alpha_1,\hdots,\alpha_{n-1} }
 \end{align}
 is the basis with linearly independent $\alpha_i$\\
-that is, basis is the largest set with linearly independent vectors.\\
-Consider the set of vectors \cbrak{1,k} $\in \vec{V}$ is linearly independent  since,
+that is, basis is the largest set with linearly independent vectors from $\vec{V}$\\
+The set of infinite vectors $\vec{S}=$\cbrak{\sqrt{2},\sqrt{3},\sqrt{5},\sqrt{7},\hdots} indicating the square root of prime numbers are irrational and lie in $\vec{V}$\\
+Consider the set of vectors $\vec{S_1}=$\cbrak{\sqrt{2},\sqrt{3}} $\in \vec{V}$\\
+We can write
 \begin{align}
 \text{for  } \beta_0,\beta_1 \in \mathbbf{Q}\\
-    \beta_0(1)+\beta_1(k)=0 \iff  \beta_0, \beta_1=0
+    \beta_0(\sqrt{2})+\beta_1(\sqrt{3})=0 \iff  \beta_0, \beta_1=0
 \end{align}
+Hence they are linearly independent.\\
+Now considering 
+\begin{align}
+    \vec{S_2}=\vec{S_1} \cup \cbrak{\sqrt{5}}\\
+    \text{for  } \beta_0,\beta_1,\beta_2 \in \mathbbf{Q}\\
+    \beta_0(\sqrt{2})+\beta_1(\sqrt{3})+ \beta_3(\sqrt{5})=0\\ \iff  \beta_0, \beta_1,\beta_2=0
+\end{align}
+Following this, the set $\vec{S}=$\cbrak{\sqrt{2},\sqrt{3},\sqrt{5},\sqrt{7},\hdots\infty} is a set of independent vectors that lie in the vector space $\vec{V}$ which indicates that the largest set with linearly independent vectors in $\vec{V}$ has infinite elements in it.\\
+Hence, the vector space of real numbers is not finite dimensional over the field of rational numbers.
 \end{document}
 
