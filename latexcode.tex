@@ -164,10 +164,24 @@ Consider the space of polynomials in $x$ of degree less than equal to one where 
 Proving that \cbrak{1,x} forms its basis,\\
 Assume there exists non zero $\beta_0,\beta_1 \in \mathbbf{Q}$ such that
 \begin{align}
-   \beta_0+\beta_1x=0 \\
+   \beta_0+\beta_1x=0\label{2} \\
    \implies x=-\frac{\beta_0}{\beta_1}\label{1}
 \end{align}
 But $x$ is irrational and $-\frac{\beta_0}{\beta_1}$ is rational so \eqref{1} can't be possible so $\beta_0,\beta_1=0$\\
-Hence $\cbrak{1,x}$ are independent
+Hence $\cbrak{1,x}$ are independent.\\
+Similarly for the set \cbrak{1,x,x^2} \\
+for  $\beta_0,\beta_1,\beta_2 \in \mathbbf{Q}$
+\begin{align}
+  \beta_0+\beta_1x+\beta_2x^2=0  
+\end{align}
+$\beta_1x+\beta_2x^2$ is irrational and $\beta_0$ is rational. Therefore
+\begin{align}
+  \beta_0=0\\
+  \text{and  } \beta_1x+\beta_2x^2=0,( x \neq 0)\\
+  \implies \beta_1+\beta_2x=0  \\
+  \implies \beta_1,\beta_2=0\\
+  \therefore  \beta_0+\beta_1x+\beta_2x^2=0\\ \iff \beta_0,\beta_1,\beta_2=0
+\end{align}
+Hence \cbrak{1,x,x^2} are independent and form basis for space of polynomials of degree less than equal to two.
 \end{document}
 
