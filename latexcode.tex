@@ -160,8 +160,7 @@ It is finite dimensional with dimensionality $n$ if every vector $\vec{v}$ in $\
 \end{align}
 is the basis with linearly independent $\alpha_i$\\
 that is, basis is the largest set with linearly independent vectors from $\vec{V}$\\
-Consider the space of polynomials in $x$ of degree less than equal to one where $x$ is irrational.\\
-Proving that \cbrak{1,x} forms its basis,\\
+Consider the set of vectors \cbrak{1,x} , where $x$ is irrational.\\
 Assume there exists non zero $\beta_0,\beta_1 \in \mathbbf{Q}$ such that
 \begin{align}
    \beta_0+\beta_1x=0 \\
@@ -182,7 +181,7 @@ $\beta_1x+\beta_2x^2$ is irrational and $\beta_0$ is rational. Therefore
   \implies \beta_1,\beta_2=0\\
   \therefore  \beta_0+\beta_1x+\beta_2x^2=0\\ \iff \beta_0,\beta_1,\beta_2=0
 \end{align}
-Hence \cbrak{1,x,x^2} are independent and form basis for space of polynomials of degree less than equal to two.\\
+Hence \cbrak{1,x,x^2} are independent \\
 By induction, let us say the set \cbrak{1,x,x^2,\hdots,x^n} is independent
 \begin{align}
 \text{for  }\beta_0,\beta_1,\beta_2,\hdots,\beta_n \in \mathbbf{Q}\\
@@ -204,6 +203,9 @@ $\beta_1,\beta_2,\hdots,\beta_{n+1}=0$
     \therefore  \beta_0+\beta_1x+\hdots+\beta_nx^n+\beta_{n+1}x^{n+1}=0 \\ \iff
     \beta_0,\beta_1,\beta_2,\hdots,\beta_n,\beta_{n+1}=0
 \end{align}
-Hence $\vec{A}$ is a linearly independent set and the basis for polynomial space of degree less than equal to $n+1$
+Hence $\vec{A}$ has linearly independent vectors\\
+Let the set $\vec{B} =\cbrak{1,x,x^2,\hdots,x^m}$ be the largest linearly independent set in $\vec{V}$ and hence can form the basis leading to dimensionality $m+1$\\
+But from induction, we have proved that $\cbrak{1,x,x^2,\hdots,x^m,x^{m+1}}$ is also independent which is a contradiction to dimensionality being $m+1$\\
+Hence we deduce that the vector space $\vec{V}$ is not finite dimensional over the field $\mathbbf{Q}$
 \end{document}
 
